@@ -1,4 +1,4 @@
--- users Records
+-- USERS RECORD
 
 INSERT INTO users (name , email) VALUES
 ('Arun Kumar','arun@gmail.com'),
@@ -24,7 +24,7 @@ INSERT INTO users (name , email) VALUES
 ('Lakshmi P','lakshmi@gmail.com');
 
 
--- categories records
+-- CATEGORIES RECORD
 
 INSERT INTO categories(category_name) VALUES 
 ('Salary'),
@@ -35,7 +35,8 @@ INSERT INTO categories(category_name) VALUES
 ('Entertainment'),
 ('Freelance');
 
--- transactions records
+
+-- TRANSACTIONS RECORD
 
 INSERT INTO transactions (user_id, category_id, type, amount, description, transaction_date)
 VALUES
@@ -79,5 +80,12 @@ VALUES
 (10,3,'Expense',2200,'Train Journey','2026-02-12'),
 (10,6,'Expense',1200,'Concert','2026-02-15');
 
+-- VERIFY DATA
+
+SELECT * FROM transactions;
+
+SELECT * FROM users;
+
+SELECT * FROM categories;
 
 			
